@@ -29,13 +29,15 @@ Kodunuz parçalanarak türleri belirlenir:
 
 ## 💡 Token Türleri ve Vurgulama Renkleri
 
-| Token Türü     | Açıklama                                      | Örnekler                         | Vurgulama Rengi (CSS Sınıfı)  |
-|----------------|-----------------------------------------------|----------------------------------|-------------------------------|
-| `keyword`      | Anahtar kelimeler                             | `let`, `if`, `else`, `function` | Mavi (`.keyword`)             |
-| `operator`     | İşlem veya karşılaştırma operatörleri         | `+`, `-`, `=`, `==`, `*`, `/`    | Turuncu (`.operator`)         |
-| `literal`      | Sayılar ve string ifadeleri                   | `42`, `"hello"`                  | Yeşil (`.literal`)            |
-| `parantez`     | Parantez sembolleri                           | `(`, `)`, `{`, `}`              | Gri (`.parantez`)             |
-| `tanımlayıcı`  | Değişken ve fonksiyon isimleri                | `myVar`, `calculateTotal`       | Varsayılan (siyah/gri)        |
+| Token Türü     | Örnekler                                 | Renk Kodu  |
+|----------------|-------------------------------------------|------------|
+| **keyword**     | `if`, `else`, `for`, `function`, `return` | `#a2004f`  |
+| **operator**    | `+`, `-`, `=`, `==`, `!=`, `<`, `>`        | `#841a9e`  | 
+| **literal**     | `"hello"`, `'a'`, `` `template` ``, `123`, `3.14` | `#a4be61`  | 
+| **parantez**    | `(`, `)`, `{`, `}`, `[`, `]`              | `#4294c1`  | 
+| **tanımlayıcı** | `myVar`, `calculate`, `user_name`         | `#b6d4d6`  | 
+
+
 
 ### 🧩 Sözdizimi Kontrolü (Syntax Analyzer)
 Kodun kurallara uygun yazılıp yazılmadığı kontrol edilir. Desteklenen yapılar:
