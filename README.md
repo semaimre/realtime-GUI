@@ -70,6 +70,16 @@ Kodunuz yazıldıkça token’lar HTML `<span>` etiketleriyle renklendirilir. Ha
 
 ---
 
+## 🎥 Demo & Bağlantılar
+
+- 📹 **Video Tanıtım:** [YouTube'da İzle](https://youtu.be/kBZkmNas5B4?si=F7fYh9ewPWsepgAe)  
+- 📁 **Kaynak Kod:** [HTML](https://github.com/semaimre/realtime-GUI/blob/main/index.html)
+- [CSS](https://github.com/semaimre/realtime-GUI/blob/main/style.css)
+- [JavaScript](https://github.com/semaimre/realtime-GUI/blob/main/script.js)
+- 📚 **Blog Yazısı:** [Tıklayınız](https://github.com/semaimre/realtime-GUI/blob/main/miniGUI.pdf)
+
+  ---
+  
 ## 🧠 Hangi Kurallara Göre Analiz Yapılıyor?
 
 Editörün tanıdığı dil kuralları basitleştirilmiş bir gramerle yazılmıştır. Örnek gramer (BNF) tanımı:
@@ -89,10 +99,6 @@ Editörün tanıdığı dil kuralları basitleştirilmiş bir gramerle yazılmı
 
 ---
 
-## 🎥 Demo & Bağlantılar
 
-- 📹 **Video Tanıtım:** [YouTube'da İzle](https://youtu.be/kBZkmNas5B4?si=F7fYh9ewPWsepgAe)  
-- 📁 **Kaynak Kod:** [GitHub Linki Eklenecek](#)  
-- 📚 **Blog Yazısı:** [Medium / Blog Linki Eklenecek](#)
 
 
