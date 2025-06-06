@@ -21,8 +21,8 @@ Bu proje, kullanıcıların **kod yazarken anlık olarak sözdizimi renklendirme
 
 ### ✍️ Token Tanıma (Lexical Analyzer)
 Kodunuz parçalanarak türleri belirlenir:
-- Keywords: if, else, for, while, function, return, let, const, var, class, variable
-- Operatörler: +, -, *, /, =, <, >, !
+- Keywords: if, else, function, return, let, variable
+- Operatörler: +, -, *, /, =, <, >
 - Literal: Sayısal ve metin sabitleri.
 - Parantezler: {} , () , []
 - Tanımlayıcılar: Bir harf veya alt çizgi ile başlayan, boşluk içermeyen fonksiyon veya değişken isimleri.
