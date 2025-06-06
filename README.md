@@ -118,9 +118,4 @@ Editörün tanıdığı dil kuralları basitleştirilmiş bir gramerle yazılmı
 <factor>           ::= <literal> | <id> | "(" <expr> ")"
 <literal>          ::= sayı | string
 <id>               ::= harf { harf | rakam }*
-
 ---
-
-
-
-
