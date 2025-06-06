@@ -1,7 +1,7 @@
 # 🖥️ Gerçek Zamanlı Mini GUI
 Bu proje, kullanıcıların **kod yazarken anlık olarak sözdizimi renklendirmesi** ve **hata uyarıları** görebileceği, tamamen tarayıcıda çalışan bir kod editörüdür. Basit bir gramer yapısına sahip diller için eğitim amaçlı geliştirilmiştir.
 
-🧠 **Kodunuzu yazarken anında analiz edilir, renklendirilir ve hatalı yerler size gösterilir.**
+🧠 Kodunuzu yazarken anında analiz edilir, renklendirilir ve hatalı yerler size gösterilir.
 
 ---
 
@@ -17,7 +17,7 @@ Bu proje, kullanıcıların **kod yazarken anlık olarak sözdizimi renklendirme
 
 ## 🛠️ Nasıl Çalışıyor?
 
-Bu editör, arka planda hem **sözcük analizi** (lexical analysis) hem de **sözdizimi analizi** (syntax analysis) yapar.
+- Bu editör, arka planda hem **sözcük analizi** (lexical analysis) hem de **sözdizimi analizi** (syntax analysis) yapar.
 
 ### ✍️ Token Tanıma (Lexical Analyzer)
 Kodunuz parçalanarak türleri belirlenir:
