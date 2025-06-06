@@ -28,11 +28,11 @@ body {
 }
 
 
-.keyword { color: #569cd6; }
-.operator { color: #d4d4d4; }
-.literal { color: #ce9178; }
-.parantez { color: #9cdcfe; }
-.tanımlayıcı { color: #dcdcaa; }
+.keyword { color: #a2004f; }
+.operator { color: #841a9e; }
+.literal { color: #a4be61; }
+.parantez { color: #4294c1; }
+.tanımlayıcı { color: #b6d4d6; }
 .error { background: #ff0000; color: #fff; }
 
 #hata {
