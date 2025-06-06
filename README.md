@@ -7,11 +7,11 @@ Bu proje, kullanıcıların **kod yazarken anlık olarak sözdizimi renklendirme
 
 ## ✨ Neler Yapabilirsiniz?
 
-✅ Kod yazın  
-✅ Sözdizimi hatalarını anında görün  
-✅ Anahtar kelimeler, değişkenler, stringler ve daha fazlası otomatik olarak renklendirilsin  
-✅ Hatalı token'lar kırmızıyla vurgulansın  
-✅ Kod yazarken imleç konumunuz korunur  
+- ✅ Kod yazın  
+- ✅ Sözdizimi hatalarını anında görün  
+- ✅ Anahtar kelimeler, değişkenler, stringler ve daha fazlası otomatik olarak renklendirilsin  
+- ✅ Hatalı token'lar kırmızıyla vurgulansın  
+- ✅ Kod yazarken imleç konumunuz korunur  
 
 ---
 
@@ -21,12 +21,21 @@ Bu editör, arka planda hem **sözcük analizi** (lexical analysis) hem de **sö
 
 ### ✍️ Token Tanıma (Lexical Analyzer)
 Kodunuz parçalanarak türleri belirlenir:
+- Keywords: if, else, for, while, function, return, let, const, var, class, variable
+- Operatörler: +, -, *, /, =, <, >, !
+- Literal: Sayısal ve metin sabitleri.
+- Parantezler: {} , () , []
+- Tanımlayıcılar: Bir harf veya alt çizgi ile başlayan, boşluk içermeyen fonksiyon veya değişken isimleri.
 
-- **let, if, else** gibi anahtar kelimeler
-- **+ = -** gibi operatörler
-- Sayılar ve stringler
-- Parantezler `() [] {}`  
-- Geçerli değişken/fonksiyon adları
+## 💡 Token Türleri ve Vurgulama Renkleri
+
+| Token Türü     | Açıklama                                      | Örnekler                         | Vurgulama Rengi (CSS Sınıfı)  |
+|----------------|-----------------------------------------------|----------------------------------|-------------------------------|
+| `keyword`      | Anahtar kelimeler                             | `let`, `if`, `else`, `function` | Mavi (`.keyword`)             |
+| `operator`     | İşlem veya karşılaştırma operatörleri         | `+`, `-`, `=`, `==`, `*`, `/`    | Turuncu (`.operator`)         |
+| `literal`      | Sayılar ve string ifadeleri                   | `42`, `"hello"`                  | Yeşil (`.literal`)            |
+| `parantez`     | Parantez sembolleri                           | `(`, `)`, `{`, `}`              | Gri (`.parantez`)             |
+| `tanımlayıcı`  | Değişken ve fonksiyon isimleri                | `myVar`, `calculateTotal`       | Varsayılan (siyah/gri)        |
 
 ### 🧩 Sözdizimi Kontrolü (Syntax Analyzer)
 Kodun kurallara uygun yazılıp yazılmadığı kontrol edilir. Desteklenen yapılar:
@@ -35,9 +44,22 @@ Kodun kurallara uygun yazılıp yazılmadığı kontrol edilir. Desteklenen yap�
 - `if / else` blokları  
 - Atama işlemleri  
 - `return` ifadeleri
+  
+| Yapı Türü              | Söz Dizimi Örneği                      | Açıklama                                                           |
+|------------------------|----------------------------------------|--------------------------------------------------------------------|
+| Değişken Tanımı        | `let variable x = 5;`                  | Değişken tanımlar. Atama opsiyoneldir.                            |
+| Fonksiyon Tanımı       | `let function foo() { ... }`           | Fonksiyon tanımlar. Parametre yok. Blok gerektirir.               |
+| Atama                  | `x = 10;`                              | Daha önce tanımlanmış bir değişkene değer atar.                   |
+| Koşul (if-else)        | `if (x > 5) { ... } else { ... }`      | Koşullu ifade. Else opsiyoneldir.                                 |
+| Return İfadesi         | `return x + 5;`                        | Fonksiyondan değer döndürür.                                      |
+| İfade (Expression)     | `3 + 4 * (x - 1)`                      | Sayılar, değişkenler, parantezli alt ifadeler ve operatörler içerir.|
+| Term                   | `factor * factor` veya `factor / factor` | Çarpma ve bölme işlemleri.                                        |
+| Factor                 | `x`, `10`, `"metin"`, `(x + 1)`        | Bir değişken, sayı, literal ya da parantezli ifade olabilir.      |
+| Blok                   | `{ statement1; statement2; }`          | Birden fazla ifadeyi gruplamak için kullanılır.                   |
+
 
 ### 🎨 Renklendirme
-Kodunuz yazıldıkça token’lar HTML `<span>` etiketleriyle renklendirilir. Hatalı kısımlar kırmızı arka planla vurgulanır.  
+- Kodunuz yazıldıkça token’lar HTML `<span>` etiketleriyle renklendirilir. Hatalı kısımlar kırmızı arka planla vurgulanır.  
 
 ---
 
@@ -82,7 +104,7 @@ Kodunuz yazıldıkça token’lar HTML `<span>` etiketleriyle renklendirilir. Ha
   
 ## 🧠 Hangi Kurallara Göre Analiz Yapılıyor?
 
-Editörün tanıdığı dil kuralları basitleştirilmiş bir gramerle yazılmıştır. Örnek gramer (BNF) tanımı:
+Editörün tanıdığı dil kuralları basitleştirilmiş bir gramerle yazılmıştır. Projenin BNF tanımı:
 
 ```bnf
 <program>          ::= <statement>*
