@@ -76,7 +76,7 @@ Kodunuz yazıldıkça token’lar HTML `<span>` etiketleriyle renklendirilir. Ha
 - 📁 **Kaynak Kod:** [HTML](https://github.com/semaimre/realtime-GUI/blob/main/index.html)
 - [CSS](https://github.com/semaimre/realtime-GUI/blob/main/style.css)
 - [JavaScript](https://github.com/semaimre/realtime-GUI/blob/main/script.js)
-- 📚 **Blog Yazısı:** [Tıklayınız](https://github.com/semaimre/realtime-GUI/blob/main/miniGUI.pdf)
+- 📚 **Makale:** [Tıklayınız](https://github.com/semaimre/realtime-GUI/blob/main/miniGUI.pdf)
 
   ---
   
